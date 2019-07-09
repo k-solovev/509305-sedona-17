@@ -1,5 +1,6 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
+
 * Студент: [Константин Соловьев](https://up.htmlacademy.ru/adaptive/17/user/509305).
 * Наставник: `Неизвестно`.
 
