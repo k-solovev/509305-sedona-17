@@ -1,12 +1,182 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8" />
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <header class="page-header">
+      <a class="page-header__link">
+        <img
+          class="page-header__logo-img"
+          src="http://placehold.it/150x100"
+          width="102"
+          height="83"
+          alt="Логотип Седоны"
+        />
+      </a>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrap">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a
+                class="site-list__link"
+                href="https://htmlacademy.ru/intensive/adaptive"
+                >Html Academy</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
+    <main class="page-main">
+      <h1 class="visually-hidden">Седона</h1>
+
+      <section class="advantages">
+        <header class="advantages__header">
+          <p class="advantages__text">
+            Седона&nbsp;&mdash; небольшой городок в&nbsp;аризоне, заслуживающий
+            большего!
+          </p>
+          <p class="advantages__text">
+            Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем гранд
+            каньон!
+          </p>
+        </header>
+        <ul class="advantages-list">
+          <li class="advantages-list__item advantages-list__item--main">
+            <h3 class="advantages-list__title">Настоящий городок</h3>
+            <span class="advantages-list__number">-№1-</span>
+            <p class="advantages-list__text">
+              Седона не&nbsp;атракцион для туристов, там течет своя жизнь
+            </p>
+            <img
+              class="advantages-list__img"
+              src="http://placehold.it/150x100"
+              width="320"
+              height="260"
+              alt="Фото города"
+            />
+            <ul class="advantages-sublist">
+              <li class="advantages-sublist__item">
+                <h4 class="advantages-sublist__title">Жилье</h4>
+                <p class="advantages-sublist__text">
+                  Рекомендуем пожить в&nbsp;настоящем мотеле, все как
+                  в&nbsp;кино!
+                </p>
+              </li>
+              <li class="advantages-sublist__item">
+                <h4 class="advantages-sublist__title">Сувениры</h4>
+                <p class="advantages-sublist__text">
+                  Не&nbsp;только китайского, но&nbsp;и&nbsp;местного
+                  производства!
+                </p>
+              </li>
+              <li class="advantages-sublist__item">
+                <h4 class="advantages-sublist__title">Еда</h4>
+                <p class="advantages-sublist__text">
+                  Всегда заказывайте фирменный бургер,
+                  вы&nbsp;не&nbsp;разочаруетесь!
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="advantages-list__item advantages-list__item--main">
+            <h3 class="advantages-list__title">Там есть мост дьявола</h3>
+            <span class="advantages-list__number">-№2-</span>
+            <p class="advantages-list__text">
+              Да, по&nbsp;нему можно пройти! Если вы&nbsp;осмелитесь, конечно
+            </p>
+            <img
+              class="advantages-list__img"
+              src="http://placehold.it/150x100"
+              width="320"
+              height="260"
+              alt="Фото моста дьявола"
+            />
+          </li>
+          <li class="advantages-list__item">
+            <h3 class="advantages-list__title">Небольшая площадь</h3>
+            <span class="advantages-list__number">-№3-</span>
+            <p class="advantages-list__text">
+              Все интересные места находятся очень близко
+            </p>
+          </li>
+          <li class="advantages-list__item">
+            <h3 class="advantages-list__title">Красивая дорога</h3>
+            <span class="advantages-list__number">-№4-</span>
+            <p class="advantages-list__text">
+              Ехать в&nbsp;Седону из&nbsp;Лас Вегаса совсем не&nbsp;скучно!
+            </p>
+          </li>
+          <li class="advantages-list__item">
+            <h3 class="advantages-list__title">Мало туристов</h3>
+            <span class="advantages-list__number">-№5-</span>
+            <p class="advantages-list__text">
+              Большинство едет в&nbsp;Гранд каньон и&nbsp;толпится там
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="booking">
+        <h2 class="booking__title">Заинтересовались?</h2>
+        <p class="booking__text">
+          Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие
+          предложения гостиниц в&nbsp;седоне
+        </p>
+        <a class="booking__link" href="#">Найти гостиницу</a>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Карта Седоны</h2>
+        <div class="map__iframe">
+          <img
+            class="map__img"
+            src="http://placehold.it/150x100"
+            width="320"
+            height="350"
+            alt="Карта Седоны"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p class="page-footer__text"></p>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#">Twitter</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">YouTube</a>
+        </li>
+      </ul>
+      <div class="page-footer__developer developer">
+        <p class="developer__text">Разработано</p>
+        <img
+          class="developer__logo"
+          src="http://placehold.it/150x100"
+          width="27"
+          height="34"
+          alt="логотип разработчика"
+        />
+      </div>
+    </footer>
   </body>
 </html>
