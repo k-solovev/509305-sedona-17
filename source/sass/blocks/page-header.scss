@@ -1,0 +1,45 @@
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 445px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.page-header__link {
+  width: 102px;
+  height: 83px;
+}
+
+.main-nav {
+  width: 100%;
+  height: 56px;
+}
+
+.main-nav__toggle {
+  width: 23px;
+  height: 21px;
+  background-color: $main-color;
+  border: none;
+}
+
+.site-list {
+  background-color: $main-color;
+}
+
+.site-list__item {
+  height: 55px;
+  box-shadow: 0 1px rgba(1, 1, 1, 0.2),
+    inset 0 1px rgba(255, 255, 255, 0.2);
+  display: flex;
+}
+
+.site-list__link {
+  display: block;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin: auto;
+}
