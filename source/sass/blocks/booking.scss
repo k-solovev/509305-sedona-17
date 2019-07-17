@@ -1,0 +1,29 @@
+.booking__title {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  width: auto;
+}
+
+.booking__text {
+  line-height: 24px;
+  text-align: center;
+  width: 263px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.booking__link {
+  display: block;
+  width: 280px;
+  height: 58px;
+  background-color: $main-color;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  padding-top: 16px;
+}

@@ -1,0 +1,39 @@
+.feedback__fieldset:nth-child(3),
+.feedback__fieldset:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback__legend {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.feedback__input::placeholder {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26;
+  color: black;
+}
+
+.feedback__label {
+  line-height: 26px;
+  text-align: left;
+}
+
+.feedback__btn {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: white;
+  text-transform: uppercase;
+  width: 280px;
+  min-height: 58px;
+  background-color: $main-color;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
