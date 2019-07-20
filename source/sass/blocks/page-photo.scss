@@ -2,10 +2,21 @@
   font-size: 18px;
   line-height: 26px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .page-photo__text {
   line-height: 24px;
   text-align: center;
   width: 269px;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+  }
 }

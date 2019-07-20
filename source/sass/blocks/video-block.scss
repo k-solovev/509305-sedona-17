@@ -1,8 +1,19 @@
+.video-block {
+  width: 800px;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+}
+
 .video-block__title {
   font-size: 18px;
   line-height: 26px;
   text-align: center;
   width: auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .video-block__text {
@@ -11,4 +22,8 @@
   width: 239px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 415px;
+  }
 }

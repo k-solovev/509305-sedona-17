@@ -3,6 +3,11 @@
   line-height: 26px;
   text-align: center;
   width: auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .booking__text {
@@ -11,6 +16,10 @@
   width: 263px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 434px;
+  }
 }
 
 .booking__link {
@@ -26,4 +35,8 @@
   line-height: 26px;
   text-align: center;
   padding-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
 }

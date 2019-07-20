@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Седона: Фото</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="page-header">
@@ -18,9 +19,13 @@
       </a>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+        <button
+          class="main-nav__toggle"
+          type="button"
+          aria-label="Открыть меню"
+        ></button>
         <div class="main-nav__wrap">
-          <ul class="main-nav__list site-list visually-hidden">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
@@ -51,65 +56,89 @@
 
       <section class="photos">
         <ul class="photos-list">
-          <li class="photos-list__item photo">
-            <img
-              class="photo__img"
-              src="../img/photo-sunset-mobile@1x.jpg"
-              width="280"
-              height="280"
-              alt="Фото просторов"
-            />
-            <h4 class="photo__title">Неродные просторы</h4>
-            <p class="photo__text">Автор фото: Борис</p>
-            <div class="photo__like">
-              <button class="photo__like-btn" type="button"></button>
-              <span class="photo__like-number">1350</span>
-            </div>
+          <li class="photos-list__item photo photo--main">
+            <a href="#" class="photo__link">
+              <img
+                class="photo__img"
+                src="../img/photo-sunset-mobile@1x.jpg"
+                width="280"
+                height="280"
+                alt="Фото просторов"
+              />
+            </a>
+            <footer class="photo__footer">
+              <div class="photo__info">
+                <h4 class="photo__title">Неродные просторы</h4>
+                <p class="photo__text">Автор фото: Борис</p>
+              </div>
+              <div class="photo__like">
+                <button class="photo__like-btn" type="button"></button>
+                <span class="photo__like-number">1350</span>
+              </div>
+            </footer>
           </li>
           <li class="photos-list__item photo">
-            <img
-              class="photo__img"
-              src="../img/photo-cactus-mobile@1x.jpg"
-              width="280"
-              height="280"
-              alt="Фото местной флоры"
-            />
-            <h4 class="photo__title">Местная растительность</h4>
-            <p class="photo__text">Автор фото: Сергей</p>
-            <div class="photo__like">
-              <button class="photo__like-btn" type="button"></button>
-              <span class="photo__like-number">143</span>
-            </div>
+            <a href="#" class="photo__link">
+              <img
+                class="photo__img"
+                src="../img/photo-cactus-mobile@1x.jpg"
+                width="280"
+                height="280"
+                alt="Фото местной флоры"
+              />
+            </a>
+            <footer class="photo__footer">
+              <div class="photo__info">
+                <h4 class="photo__title">Местная растительность</h4>
+                <p class="photo__text">Автор фото: Сергей</p>
+              </div>
+              <div class="photo__like">
+                <button class="photo__like-btn" type="button"></button>
+                <span class="photo__like-number">143</span>
+              </div>
+            </footer>
           </li>
           <li class="photos-list__item photo">
-            <img
-              class="photo__img"
-              src="../img/photo-roads-mobile@1x.jpg"
-              width="280"
-              height="280"
-              alt="Фото дороги"
-            />
-            <h4 class="photo__title">Дорога на север</h4>
-            <p class="photo__text">Автор фото: Петр</p>
-            <div class="photo__like">
-              <button class="photo__like-btn" type="button"></button>
-              <span class="photo__like-number">96</span>
-            </div>
+            <a href="#" class="photo__link">
+              <img
+                class="photo__img"
+                src="../img/photo-roads-mobile@1x.jpg"
+                width="280"
+                height="280"
+                alt="Фото дороги"
+              />
+            </a>
+            <footer class="photo__footer">
+              <div class="photo__info">
+                <h4 class="photo__title">Дорога на север</h4>
+                <p class="photo__text">Автор фото: Петр</p>
+              </div>
+              <div class="photo__like">
+                <button class="photo__like-btn" type="button"></button>
+                <span class="photo__like-number">96</span>
+              </div>
+            </footer>
           </li>
           <li class="photos-list__item photo">
-            <img
-              class="photo__img"
-              src="../img/photo-bridge-mobile@1x.jpg"
-              width="280"
-              height="280"
-              alt="Фото моста дьявола"
-            />
-            <h4 class="photo__title">Мост дьявола</h4>
-            <p class="photo__text">Автор фото: Антон</p>
-            <div class="photo__like">
-              <button class="photo__like-btn" type="button"></button>
-              <span class="photo__like-number">254</span>
-            </div>
+            <a href="#" class="photo__link">
+              <img
+                class="photo__img"
+                src="../img/photo-bridge-mobile@1x.jpg"
+                width="280"
+                height="280"
+                alt="Фото моста дьявола"
+              />
+            </a>
+            <footer class="photo__footer">
+              <div class="photo__info">
+                <h4 class="photo__title">Мост дьявола</h4>
+                <p class="photo__text">Автор фото: Антон</p>
+              </div>
+              <div class="photo__like">
+                <button class="photo__like-btn" type="button"></button>
+                <span class="photo__like-number">254</span>
+              </div>
+            </footer>
           </li>
         </ul>
       </section>
@@ -128,65 +157,82 @@
               alt="Экран видео"
             />
           </div>
-          <div class="video-block__player-control player-control">
-            <div class="player-control__scroll">
-              <div class="player-control__bar">
-                <div class="player-control__slider"></div>
+          <div class="player__control container">
+            <div class="player__scroll">
+              <div class="player__bar">
+                <div class="player__slider"></div>
               </div>
             </div>
-            <div class="player-control__buttons player-btns">
-              <button class="player-btns__btn">
-                <img
-                  class="player-btns__icon"
+            <button class="player__button player__button--repeat">
+              <img
+                  class="player__icon"
                   src="http://placehold.it/150x100"
                   width="16"
                   height="20"
                   alt="Иконка повтора"
-                />
-              </button>
-              <button class="player-btns__btn">
-                <img
-                  class="player-btns__icon"
+              />
+            </button>
+            <button class="player__button player__button--subtitles">
+              <img
+                  class="player__icon"
                   src="http://placehold.it/150x100"
                   width="32"
                   height="20"
                   alt="Иконка субтитров"
-                />
-              </button>
-              <button class="player-btns__btn">
-                <img
-                  class="player-btns__icon"
+              />
+            </button>
+            <button class="player__button player__button--full-screen">
+              <img
+                  class="player__icon"
                   src="http://placehold.it/150x100"
                   width="20"
                   height="20"
                   alt="Иконка на весь экран"
-                />
-              </button>
+              />
+            </button>
             </div>
           </div>
-        </div>
       </section>
     </main>
 
     <footer class="page-footer">
-        <p class="page-footer__text">#visitsedona</p>
-        <ul class="page-footer__social social">
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="Twitter"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="Facebook"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="YouTube"></a>
-          </li>
-        </ul>
-        <div class="page-footer__developer developer">
-          <p class="developer__text">Разработано</p>
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-            <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+      <p class="page-footer__text">#visitsedona</p>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="Twitter"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="Facebook"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="YouTube"></a>
+        </li>
+      </ul>
+      <div class="page-footer__developer developer">
+        <p class="developer__text">Разработано</p>
+        <a
+          class="developer__link"
+          href="https://htmlacademy.ru/intensive/adaptive"
+        >
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            width="26.943px"
+            height="34.09px"
+            viewBox="0 0 26.943 34.09"
+            enable-background="new 0 0 26.943 34.09"
+            xml:space="preserve"
+          >
+            <path
+              d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"
+            />
           </svg>
-        </div>
-      </footer>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,9 @@
+.developer {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.developer__text {
+  display: inline-block;
+}
