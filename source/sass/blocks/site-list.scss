@@ -1,0 +1,32 @@
+.site-list {
+  display: none;
+  background-color: $main-color;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+  }
+}
+
+.site-list__item {
+  height: 55px;
+  box-shadow: 0 1px rgba(1, 1, 1, 0.2),
+    inset 0 1px rgba(255, 255, 255, 0.2);
+  display: flex;
+}
+
+.site-list__link {
+  display: block;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    color: black;
+    font-size: 14px;
+    line-height: 26px;
+  }
+}

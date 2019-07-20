@@ -1,0 +1,39 @@
+.player__control {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.player__scroll {
+  width: 100%;
+  height: 45px;
+  background-color: black;
+  opacity: 0.6;
+  display: flex;
+}
+
+.player__bar {
+  position: relative;
+  width: 235px;
+  height: 3px;
+  background-color: white;
+  opacity: 0.2;
+  margin: auto;
+}
+
+.player__slider {
+  cursor: pointer;
+  width: 11px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+}
+
+.player__button {
+  background-color: #f2f2f2;
+
+  &--subtitles {
+    margin-left: auto;
+  }
+}

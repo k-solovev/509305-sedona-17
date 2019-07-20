@@ -1,4 +1,44 @@
+.photos-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo {
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    position: relative;
+  }
+
+  &--main {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+  }
+}
+
 .photo__text {
   text-transform: none;
   line-height: 24px;
+}
+
+.photo__footer {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 80px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+  }
 }

@@ -1,6 +1,10 @@
 .page-footer {
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: nowrap;
+  }
 }
 
 .page-footer__text {
@@ -9,27 +13,17 @@
   line-height: 26px;
   font-weight: bold;
   text-align: center;
-}
 
-.social {
-  display: flex;
-  width: 100%;
-}
-
-.social__item {
-  width: 46px;
-  height: 48px;
-  background-color: $main-color;
-
-  &:first-child {
-    margin-left: auto;
-  }
-
-  &:last-child {
-    margin-right: auto;
+  @media (min-width: $tablet-width) {
+    width: auto;
   }
 }
 
-.developer__text {
-  display: inline-block;
+.page-footer__developer {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 }

@@ -1,5 +1,5 @@
 body {
-  width: 320px;
+  width: auto;
   margin: 0;
   box-sizing: border-box;
   text-transform: uppercase;
@@ -22,6 +22,11 @@ body {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  width: auto;
+  padding: 0 20px;
 }
 
 a {
