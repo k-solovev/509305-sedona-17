@@ -1,9 +1,27 @@
+.advantages__header {
+  min-height: 170px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -207px;
+    width: 320px;
+    height: 37px;
+    background-image: url("../img/bg-triangle.svg");
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
 }
 
 .advantages__text {
+  padding-top: 20px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
@@ -13,6 +31,7 @@
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
+    padding-top: 40px;
     width: 490px;
     font-size: 21px;
   }
@@ -22,6 +41,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
+  padding-top: 0;
 }
 
 .advantages-list__item {
@@ -58,6 +78,8 @@
 }
 
 .advantages-list__info {
+  padding-top: 40px;
+
   @media (min-width: $tablet-width) {
     width: 256px;
     min-height: 256px;
