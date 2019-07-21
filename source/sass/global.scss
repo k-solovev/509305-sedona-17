@@ -27,6 +27,14 @@ body {
 .container {
   width: auto;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+  }
 }
 
 a {

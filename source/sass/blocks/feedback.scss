@@ -1,26 +1,113 @@
-.feedback__fieldset:nth-child(3),
-.feedback__fieldset:nth-child(4) {
-  display: flex;
-  flex-direction: column;
+.feedback {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.feedback__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  &--introducing,
+  &--impression {
+    @media (min-width: $tablet-width) {
+      width: 324px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 600px;
+    }
+  }
+
+  &--impression {
+    @media (min-width: $tablet-width) {
+      order: -1;
+    }
+  }
+
+  &--contacts,
+  &--showplaces,
+  &--emotions {
+    width: 100%;
+  }
+
+  &--impression,
+  &--showplaces {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--contacts {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &--contacts .feedback__wrapper {
+    @media (min-width: $desktop-width) {
+      width: 520px;
+    }
+  }
 }
 
 .feedback__legend {
+  width: 100%;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
 }
 
-.feedback__input::placeholder {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26;
-  color: black;
+.feedback__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feedback__input {
+  border: none;
+  background-color: #f2f2f2;
+  height: 56px;
+  padding: 22px;
+
+  &::placeholder {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26;
+    color: black;
+  }
+
+  &--tel,
+  &--email {
+    width: 100%;
+  }
+}
+
+.feedback__textarea {
+  padding: 22px;
+  width: 100%;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    color: black;
+  }
 }
 
 .feedback__label {
   line-height: 26px;
   text-align: left;
+
+  &--radio,
+  &--checkbox {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: none;
+  }
 }
 
 .feedback__btn {
@@ -36,4 +123,17 @@
   margin-left: auto;
   margin-right: auto;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    margin-left: 0;
+  }
+}
+
+.feedback__subtext {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

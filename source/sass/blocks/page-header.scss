@@ -6,6 +6,32 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
+
+  &::after {
+    content: "";
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    right: 0;
+    left: 0;
+    bottom: 31px;
+    width: 320px;
+    height: 26px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+
+    @media (min-width: $tablet-width) {
+      bottom: 23px;
+      width: 768px;
+      height: 65px;
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1200px;
+      height: 57px;
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+    }
+  }
 }
 
 .page-header__link {
