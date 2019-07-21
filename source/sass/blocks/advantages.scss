@@ -1,6 +1,7 @@
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .advantages__text {
@@ -36,6 +37,19 @@
     position: relative;
   }
 
+  &::after {
+    content: "";
+    width: 320px;
+    height: 37px;
+    background-image: url("../img/bg-triangle.svg");
+    position: absolute;
+    top: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
   &--main {
     background-color: $main-color;
 
@@ -51,6 +65,11 @@
     font-size: 21px;
     line-height: 26px;
   }
+
+  &--main:first-child .advantages-list__title {
+    padding-top: 61px;
+  }
+
 
   &--main:nth-child(2) .advantages-list__info {
     order: 2;
