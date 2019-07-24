@@ -1,37 +1,9 @@
 .page-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  min-height: 445px;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-
-  &::after {
-    content: "";
-    position: absolute;
-    margin-right: auto;
-    margin-left: auto;
-    right: 0;
-    left: 0;
-    bottom: 31px;
-    width: 320px;
-    height: 26px;
-    background-image: url("../img/bg-intro-triangle-mobile.svg");
-
-    @media (min-width: $tablet-width) {
-      bottom: 23px;
-      width: 768px;
-      height: 65px;
-      background-image: url("../img/bg-intro-triangle-tablet.svg");
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 1200px;
-      height: 57px;
-      background-image: url("../img/bg-intro-triangle-desktop.svg");
-    }
-  }
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 56px;
+  position: relative;
 }
 
 .page-header__link {
@@ -39,5 +11,7 @@
   height: 83px;
   position: absolute;
   left: 50%;
+  bottom: -27px;
   transform: translate(-50%, 0);
+  z-index: 2;
 }

@@ -1,4 +1,5 @@
 .advantages-list {
+  @include list;
   display: flex;
   flex-wrap: wrap;
   position: relative;

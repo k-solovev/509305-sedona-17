@@ -1,6 +1,5 @@
 .site-list {
-  margin: 0;
-  display: none;
+  @include list;
   background-color: $main-color;
 
   @media (min-width: $tablet-width) {
@@ -11,18 +10,7 @@
 }
 
 .site-list__item {
-  height: 56px;
-  box-shadow: 0 1px rgba(1, 1, 1, 0.2),
-    inset 0 1px rgba(255, 255, 255, 0.2);
-  display: flex;
-
-  @media (min-width: $tablet-width) {
-    width: 153px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 239px;
-  }
+  text-align: center;
 
   &:nth-child(3) {
     margin-left: auto;
@@ -35,7 +23,9 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 40px;
-  margin: auto;
+  padding: 13px;
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
 
   @media (min-width: $tablet-width) {
     color: black;
