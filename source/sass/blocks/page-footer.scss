@@ -1,9 +1,17 @@
 .page-footer {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
+    width: 768px;
     flex-wrap: nowrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
   }
 }
 
@@ -22,6 +30,8 @@
 .page-footer__developer {
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     width: auto;

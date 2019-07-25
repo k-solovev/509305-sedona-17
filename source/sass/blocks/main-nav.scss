@@ -11,6 +11,10 @@
 
   &--closed .site-list {
     display: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
   }
 
   &--opened .site-list {
@@ -35,4 +39,8 @@
   position: absolute;
   top: 20px;
   right: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

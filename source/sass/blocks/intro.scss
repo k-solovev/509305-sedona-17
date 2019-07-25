@@ -2,7 +2,13 @@
   min-height: 389px;
   background-color: $main-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-height: 518px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
 
   &::after {
     content: "";
@@ -17,7 +23,7 @@
     background-image: url("../img/bg-intro-triangle-mobile.svg");
 
     @media (min-width: $tablet-width) {
-      bottom: 23px;
+      bottom: -8px;
       width: 768px;
       height: 65px;
       background-image: url("../img/bg-intro-triangle-tablet.svg");
@@ -33,6 +39,7 @@
 
 .intro__slogan {
   position: absolute;
+  top: 85px;
   right: 0;
   left: 0;
   margin-left: auto;
