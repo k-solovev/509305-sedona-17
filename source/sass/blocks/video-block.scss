@@ -1,7 +1,17 @@
 .video-block {
-  width: 800px;
-  margin-left: 50%;
-  transform: translate(-50%, 0);
+  padding-bottom: 90px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .video-block__title {

@@ -1,6 +1,14 @@
+.player {
+  position: relative;
+}
+
 .player__control {
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   flex-wrap: wrap;
+  position: absolute;
+  bottom: -63px;
 }
 
 .player__scroll {
@@ -30,10 +38,31 @@
   top: -3px;
 }
 
-.player__button {
+.player__wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   background-color: #f2f2f2;
+  min-height: 66px;
+}
+
+.player__button {
+  border: none;
+  padding: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: transparent;
+
+  &--repeat {
+    margin-left: 25px;
+  }
 
   &--subtitles {
     margin-left: auto;
+  }
+
+  &--full-screen {
+    margin-left: 23px;
+    margin-right: 23px;
   }
 }
