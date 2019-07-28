@@ -4,6 +4,8 @@
   padding: 55px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  z-index: 10;
 
   @media (min-width: $tablet-width) {
     width: 400px;
@@ -46,5 +48,14 @@
 
   @media (min-width: $tablet-width) {
     width: 272px;
+
+    &:hover {
+      background-color: $hvr-btn;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: $act-btn;
+    }
   }
 }

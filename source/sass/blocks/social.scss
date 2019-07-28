@@ -27,4 +27,12 @@
     left: 0;
     right: 0;
   }
+
+  &:hover {
+    background-color: $hvr-btn;
+  }
+
+  &:active {
+    background-color: $act-btn;
+  }
 }

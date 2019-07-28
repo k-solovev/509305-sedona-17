@@ -1,6 +1,5 @@
 .site-list {
   @include list;
-  background-color: $main-color;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -15,6 +14,20 @@
   &:nth-child(3) {
     margin-left: auto;
   }
+
+  @media (min-width: $tablet-width) {
+    &--active .site-list__link {
+      color: #766357;
+    }
+
+    &--active:hover .site-list__link {
+      color: #604e43;
+    }
+
+    &--active:active .site-list__link {
+      color: rgba(118, 99, 87, 0.3);
+    }
+  }
 }
 
 .site-list__link {
@@ -24,13 +37,34 @@
   font-size: 18px;
   line-height: 40px;
   padding: 13px;
+  background-color: $main-color;
   border-top: 1px solid #9ac2db;
   border-bottom: 1px solid #678fa8;
 
+  &:hover {
+    background-color: $hvr-btn;
+  }
+
+  &:active {
+    background-color: $act-btn;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
+    background-color: white;
     color: black;
     font-size: 14px;
     line-height: 26px;
     border: none;
+
+    &:hover {
+      color: $main-color;
+      background-color: white;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: white;
+    }
   }
 }

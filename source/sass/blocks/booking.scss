@@ -38,5 +38,14 @@
 
   @media (min-width: $tablet-width) {
     width: 458px;
+
+    &:hover {
+      background-color: $hvr-btn;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: $act-btn;
+    }
   }
 }
