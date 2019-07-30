@@ -1,3 +1,17 @@
+.page-photo {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
+
 .page-photo__title {
   font-size: 18px;
   line-height: 26px;
@@ -12,6 +26,8 @@
 .page-photo__text {
   line-height: 24px;
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     width: 428px;

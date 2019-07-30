@@ -4,6 +4,8 @@
   padding-top: 50px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  z-index: 10;
 
   @media (min-width: $tablet-width) {
     width: 640px;
@@ -28,8 +30,9 @@
   padding: 0 40px;
 }
 
-.popup__wrapper {
+.popup-success__wrapper {
   width: 100%;
+  padding: 20px;
   min-height: 98px;
   background-color: #f2f2f2;
   display: flex;
@@ -45,4 +48,15 @@
   font-weight: bold;
   text-transform: uppercase;
   margin: auto;
+
+  @media (min-width: $tablet-width) {
+    &:hover {
+      background-color: $hvr-btn;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: $act-btn;
+    }
+  }
 }

@@ -1,0 +1,62 @@
+.photos {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.photos__list {
+  @include list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photos__list__item {
+  position: relative;
+
+  &:first-child {
+    &::before {
+      content: "";
+      width: 320px;
+      height: 1px;
+      background-color: #e5e5e5;
+      position: absolute;
+      top: 0;
+      left: -20px;
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.photo__like-btn {
+  border: none;
+  width: 22px;
+  height: 20px;
+  background-color: white;
+  background-image: url("../img/icon-like.svg");
+}

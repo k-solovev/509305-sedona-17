@@ -5,6 +5,10 @@ body {
   text-transform: uppercase;
   font-family: "PTSans", sans-serif;
   font-size: 14px;
+
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  }
 }
 
 *,
@@ -24,24 +28,6 @@ body {
   overflow: hidden;
 }
 
-.container {
-  width: auto;
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 60px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 40px;
-  }
-}
-
 a {
   text-decoration: none;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
 }
