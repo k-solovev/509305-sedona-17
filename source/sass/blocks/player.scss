@@ -2,6 +2,17 @@
   position: relative;
 }
 
+.player__img {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
+}
+
 .player__control {
   padding-left: 20px;
   padding-right: 20px;
