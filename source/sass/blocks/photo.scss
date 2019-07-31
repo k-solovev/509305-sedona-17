@@ -21,6 +21,30 @@
   line-height: 24px;
 }
 
+.photo--main .photo__img {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: auto;
+  }
+}
+
+.photo__img {
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    height: auto;
+  }
+}
+
 .photo__footer {
   @media (min-width: $tablet-width) {
     display: flex;
