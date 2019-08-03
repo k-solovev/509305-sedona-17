@@ -3,6 +3,8 @@
 
   &--opened .main-nav__toggle {
     background-image: url("../img/icon-cross.svg");
+    background-color: $main-color;
+    outline: none;
   }
 
   &--closed .main-nav__toggle {
@@ -31,14 +33,15 @@
 }
 
 .main-nav__toggle {
-  width: 23px;
-  height: 21px;
-  background-color: $main-color;
+  width: 22px;
+  height: 22px;
+  background-color: white;
   border: none;
   order: 1;
   position: absolute;
   top: 20px;
   right: 20px;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     display: none;

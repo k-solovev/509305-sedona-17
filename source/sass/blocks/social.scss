@@ -35,4 +35,12 @@
   &:active {
     background-color: $act-btn;
   }
+
+  &:active .social__icon {
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
+  fill: white;
 }
