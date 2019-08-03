@@ -7,3 +7,13 @@
 .developer__text {
   display: inline-block;
 }
+
+.developer__link {
+  &:hover .developer__icon {
+    fill: $main-color;
+  }
+
+  &:active .developer__icon {
+    opacity: 0.3;
+  }
+}
