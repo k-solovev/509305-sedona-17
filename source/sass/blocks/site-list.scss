@@ -1,5 +1,16 @@
 .site-list {
   @include list;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 7px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    box-shadow: inset 0 -3px 5px -2px rgba(0, 0, 0, 0.5);
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -36,7 +47,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 40px;
-  padding: 13px;
+  padding: 7px;
   background-color: $main-color;
   border-top: 1px solid #9ac2db;
   border-bottom: 1px solid #678fa8;

@@ -1,8 +1,5 @@
-.advantages-list {
-  @include list;
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
+.advantages__header {
+  padding-top: 20px;
 }
 
 .advantages__text {
@@ -14,6 +11,14 @@
   margin-left: auto;
   margin-right: auto;
 
+  &:first-child {
+    margin-bottom: 28px;
+  }
+
+  &:last-child {
+    margin-bottom: 4px;
+  }
+
   @media (min-width: $tablet-width) {
     width: 490px;
     font-size: 21px;
@@ -24,208 +29,4 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
-}
-
-.advantages-list__item {
-  background-color: #eeeeee;
-
-  @media (min-width: $tablet-width) {
-    width: 256px;
-    min-height: 256px;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: relative;
-  }
-
-  &::after {
-    content: "";
-    width: 320px;
-    height: 37px;
-    background-image: url("../img/bg-triangle.svg");
-    position: absolute;
-    top: 0;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-
-  &--main {
-    background-color: $main-color;
-    padding-top: 44px;
-
-    @media (min-width: $tablet-width) {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      color: white;
-    }
-  }
-
-  &--main .advantages-list__title {
-    color: white;
-    font-size: 18px;
-    line-height: 26px;
-  }
-
-  &--main .advantages-list__number,
-  &--main .advantages-list__text {
-    color: white;
-  }
-
-  &--main:first-child .advantages-list__title {
-    padding-top: 61px;
-  }
-
-
-  &--main:nth-child(2) .advantages-list__info {
-    order: 2;
-  }
-}
-
-.advantages-list__info {
-  @media (min-width: $tablet-width) {
-    width: 256px;
-    min-height: 256px;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: relative;
-    width: 400px;
-  }
-}
-
-.advantages-sublist {
-  @include list;
-  background-color: white;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-}
-
-.advantages-sublist__item {
-  padding-top: 35px;
-  padding-left: 70px;
-
-  &--housing {
-    background-image: url("../img/icon-house.svg");
-    background-repeat: no-repeat;
-    background-size: 37px 36px;
-    background-position: 20px 27px;
-
-    @media (min-width: $tablet-width) {
-      background-size: 75px 72px;
-      background-position: 87px 50px;
-    }
-  }
-
-  &--gifts {
-    background-image: url("../img/icon-gift.svg");
-    background-repeat: no-repeat;
-    background-size: 32px 38px;
-    background-position: 20px 27px;
-
-    @media (min-width: $tablet-width) {
-      background-size: 64px 75px;
-      background-position: 87px 50px;
-    }
-  }
-
-  &--food {
-    background-image: url("../img/icon-burger.svg");
-    background-repeat: no-repeat;
-    background-size: 40px 35px;
-    background-position: 20px 27px;
-
-    @media (min-width: $tablet-width) {
-      background-size: 77px 68px;
-      background-position: 87px 50px;
-    }
-  }
-
-  &:last-child {
-    padding-bottom: 35px;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-top: 150px;
-    padding-left: 20px;
-    width: 256px;
-  }
-}
-
-.advantages-sublist__title,
-.advantages-sublist__text {
-  margin: 0;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: left;
-  width: 210px;
-
-  @media (min-width: $tablet-width) {
-    text-align: center;
-    color: black;
-    font-size: 21px;
-    line-height: 26px;
-  }
-}
-
-.advantages-sublist__title {
-  margin-bottom: 15px;
-}
-
-.advantages-sublist__text {
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.advantages-list__title {
-  width: 238px;
-  font-weight: bold;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media (min-width: $tablet-width) {
-    font-size: 21px;
-    line-height: 26px;
-  }
-}
-
-.advantages-list__number {
-  display: block;
-  text-align: center;
-}
-
-.advantages-list__text {
-  line-height: 21px;
-  text-align: center;
-
-  @media (min-width: $desktop-width) {
-    width: 265px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
-}
-
-.advantages-list__img {
-  display: block;
-  background-color: $main-color;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  background-position: center;
-
-  @media (min-width: $tablet-width) {
-    width: 512px;
-    height: 256px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 800px;
-  }
 }

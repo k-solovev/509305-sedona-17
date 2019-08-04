@@ -1,8 +1,15 @@
+.booking {
+  padding: 30px 10px;
+  padding-bottom: 48px;
+}
+
 .booking__title {
   font-size: 21px;
   line-height: 26px;
   text-align: center;
   width: auto;
+  margin: 0;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -14,8 +21,8 @@
   line-height: 24px;
   text-align: center;
   width: 263px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     width: 434px;
