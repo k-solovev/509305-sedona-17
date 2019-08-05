@@ -13,6 +13,7 @@
   @media (min-width: $tablet-width) {
     width: 256px;
     min-height: 256px;
+    padding: 24px 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,6 +28,10 @@
     left: 20px;
     right: 20px;
     background-color: #d6d6d6;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &:last-child::after {
@@ -60,6 +65,12 @@
 
   &--main .advantages-list__title {
     color: white;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 
   &--main .advantages-list__number,
@@ -69,20 +80,29 @@
 
   &--main .advantages-list__number {
     margin-bottom: 18px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 25px;
+    }
   }
 
   &--main .advantages-list__text {
+    padding: 0 45px;
     margin-bottom: 40px;
   }
 
   &--main:first-child .advantages-list__title {
-    padding-top: 60px;
+    padding-top: 58px;
     margin-bottom: 11px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 24px;
+    }
   }
 
 
   &--main:nth-child(2) .advantages-list__info {
-    padding-top: 20px;
+    padding-top: 21px;
     order: 2;
   }
 
@@ -106,7 +126,6 @@
 .advantages-list__title {
   font-size: 18px;
   line-height: 26px;
-  width: 238px;
   font-weight: bold;
   text-align: center;
   margin-left: auto;
@@ -114,6 +133,7 @@
   margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
+    width: 50%;
     font-size: 21px;
     line-height: 26px;
   }
@@ -130,6 +150,11 @@
   margin-top: 18px;
   line-height: 21px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 33px;
+    margin-top: 24px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 265px;

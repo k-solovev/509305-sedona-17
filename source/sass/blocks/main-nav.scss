@@ -21,6 +21,10 @@
 
   &--opened .site-list {
     display: block;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
   }
 
   &--nojs .site-list {

@@ -1,5 +1,9 @@
 .advantages__header {
-  padding-top: 20px;
+  padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 29px;
+  }
 }
 
 .advantages__text {
@@ -17,6 +21,10 @@
 
   &:last-child {
     margin-bottom: 4px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 50px;
+    }
   }
 
   @media (min-width: $tablet-width) {
