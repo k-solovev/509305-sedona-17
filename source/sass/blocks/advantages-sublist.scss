@@ -33,6 +33,10 @@
       background-size: 75px 72px;
       background-position: 90px 60px;
     }
+
+    @media (min-width: $desktop-width) {
+      background-position-x: 161px;
+    }
   }
 
   &--gifts {
@@ -46,6 +50,16 @@
       padding-top: 159px;
       background-size: 64px 75px;
       background-position: 95px 57px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position-x: 167px;
+    }
+
+    & .advantages-sublist__text {
+      @media (min-width: $desktop-width) {
+        width: 270px;
+      }
     }
   }
 
@@ -61,6 +75,11 @@
       padding-bottom: 61px;
       background-size: 77px 68px;
       background-position: 88px 63px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position-x: 161px;
+      padding-bottom: 82px;
     }
   }
 }
@@ -86,5 +105,9 @@
     width: 165px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 290px;
   }
 }

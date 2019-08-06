@@ -6,6 +6,10 @@
     padding-top: 56px;
     padding-bottom: 58px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 66px;
+  }
 }
 
 .booking__title {
@@ -33,6 +37,10 @@
   @media (min-width: $tablet-width) {
     width: 438px;
     margin-bottom: 42px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
   }
 }
 
