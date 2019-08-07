@@ -12,10 +12,20 @@
   }
 }
 
+.page-photo .intro__logo {
+  min-height: 157px;
+}
+
+.page-photo .intro__slogan {
+  top: 50px;
+}
+
 .page-photo__title {
   font-size: 18px;
   line-height: 26px;
   text-align: center;
+  margin-top: 38px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -26,8 +36,9 @@
 .page-photo__text {
   line-height: 24px;
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     width: 428px;

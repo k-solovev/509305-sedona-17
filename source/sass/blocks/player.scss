@@ -47,6 +47,7 @@
   border-radius: 50%;
   position: absolute;
   top: -3px;
+  left: 34px;
 }
 
 .player__wrap {
@@ -73,7 +74,7 @@
   }
 
   &--full-screen {
-    margin-left: 23px;
+    margin-left: 31px;
     margin-right: 23px;
   }
 }

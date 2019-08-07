@@ -1,5 +1,6 @@
 .video-block {
-  padding-bottom: 90px;
+  padding-top: 33px;
+  padding-bottom: 105px;
 
   @media (min-width: $tablet-width) {
     padding-left: 60px;
@@ -19,6 +20,8 @@
   line-height: 26px;
   text-align: center;
   width: auto;
+  margin: 0;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -29,9 +32,9 @@
 .video-block__text {
   line-height: 24px;
   text-align: center;
-  width: 239px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 240px;
+  margin: 0 auto;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     width: 415px;
