@@ -1,5 +1,9 @@
 .player {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
 }
 
 .player__img {
@@ -30,6 +34,10 @@
     position: absolute;
     bottom: 3px;
     background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
@@ -109,7 +117,25 @@
 .player__icon {
   fill: #5c6870;
 
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     fill: white;
+
+    &:hover {
+      fill: white;
+      opacity: 0.6;
+    }
+
+    &:active {
+      fill: white;
+      opacity: 0.3;
+    }
   }
 }
