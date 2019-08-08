@@ -135,7 +135,9 @@
                 <p class="photo__text">Автор фото: Борис</p>
               </div>
               <div class="photo__like">
-                <button class="photo__like-btn" type="button"></button>
+                <svg class="photo__icon-like" width="22" height="20">
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
                 <span class="photo__like-number">1350</span>
               </div>
             </footer>
@@ -196,7 +198,9 @@
                 <p class="photo__text">Автор фото: Сергей</p>
               </div>
               <div class="photo__like">
-                <button class="photo__like-btn" type="button"></button>
+                <svg class="photo__icon-like" width="23" height="21">
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
                 <span class="photo__like-number">143</span>
               </div>
             </footer>
@@ -257,7 +261,9 @@
                 <p class="photo__text">Автор фото: Петр</p>
               </div>
               <div class="photo__like">
-                <button class="photo__like-btn" type="button"></button>
+                <svg class="photo__icon-like" width="22" height="20">
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
                 <span class="photo__like-number">96</span>
               </div>
             </footer>
@@ -318,7 +324,9 @@
                 <p class="photo__text">Автор фото: Антон</p>
               </div>
               <div class="photo__like">
-                <button class="photo__like-btn" type="button"></button>
+                <svg class="photo__icon-like" width="22" height="20">
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
                 <span class="photo__like-number">254</span>
               </div>
             </footer>
@@ -329,8 +337,8 @@
       <section class="video-block">
         <h2 class="video-block__title">Все еще сомневаетесь?</h2>
         <p class="video-block__text">
-          Смотрите видеопрезентацию и скорее за билетами, пока они
-          не подорожали в очередной раз!
+          Смотрите видеопрезентацию искорее забилетами, пока они неподорожали
+          вочередной раз!
         </p>
         <div class="video-block__player player">
           <div class="player__screen">
@@ -380,40 +388,24 @@
             </picture>
           </div>
           <div class="player__control">
+            <button class="player__button player__button--repeat">
+              <svg class="player__icon player__icon-repeat" width="16" height="20">
+                <use xlink:href="img/sprite.svg#icon-video-repeat"></use>
+              </svg>
+            </button>
             <div class="player__scroll">
-              <div class="player__bar">
-                <div class="player__slider"></div>
-              </div>
+              <div class="player__bar"></div>
             </div>
-            <div class="player__wrap">
-              <button class="player__button player__button--repeat">
-                <img
-                  class="player__icon"
-                  src="img/icon-video-replay.svg"
-                  width="16"
-                  height="20"
-                  alt="Иконка повтора"
-                />
-              </button>
-              <button class="player__button player__button--subtitles">
-                <img
-                  class="player__icon"
-                  src="img/icon-video-subtitles.svg"
-                  width="32"
-                  height="20"
-                  alt="Иконка субтитров"
-                />
-              </button>
-              <button class="player__button player__button--full-screen">
-                <img
-                  class="player__icon"
-                  src="/img/icon-video-fullscreen.svg"
-                  width="20"
-                  height="20"
-                  alt="Иконка на весь экран"
-                />
-              </button>
-            </div>
+            <button class="player__button player__button--subtitles">
+              <svg class="player__icon player__icon--subtitles" width="32" height="20">
+                <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
+              </svg>
+            </button>
+            <button class="player__button player__button--fullscreen">
+              <svg class="player__icon player__icon--fullscreen" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
