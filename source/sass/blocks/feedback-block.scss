@@ -1,4 +1,7 @@
 .feedback-block {
+  padding-top: 22px;
+  padding-bottom: 37px;
+
   @media (min-width: $tablet-width) {
     padding-left: 60px;
     padding-right: 60px;
@@ -11,6 +14,7 @@
 }
 
 .feedback-block__title {
+  margin-bottom: 27px;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
@@ -27,6 +31,7 @@
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 17px;
   width: auto;
 
   @media (min-width: $tablet-width) {

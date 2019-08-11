@@ -14,4 +14,24 @@
 
 .page-form .intro__logo {
   min-height: 157px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 290px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 301px;
+  }
+}
+
+.page-form .intro__slogan {
+  top: 50px;
+
+  @media (min-width: $tablet-width) {
+    top: -44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -39px;
+  }
 }

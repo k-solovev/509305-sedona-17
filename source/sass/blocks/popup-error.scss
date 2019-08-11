@@ -1,8 +1,8 @@
 .popup-error {
+  display: none;
   width: 320px;
   min-height: 280px;
   padding: 55px;
-  display: flex;
   flex-direction: column;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   z-index: 10;

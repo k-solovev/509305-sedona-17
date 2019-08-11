@@ -1,7 +1,4 @@
 .feedback {
-  padding-left: 20px;
-  padding-right: 20px;
-
   @media (min-width: $tablet-width) {
     padding-left: 0;
     padding-right: 0;
@@ -13,19 +10,83 @@
 
 .feedback__fieldset {
   border: none;
-  padding: 0;
+  border-top: 1px solid #e5e5e5;
+  padding: 0 20px 5px 20px;
   margin: 0;
 
+  &--introducing {
+    @media (min-width: $tablet-width) {
+      width: 50%;
+    }
+  }
+
+  &--contacts {
+    padding-bottom: 9px;
+
+    & .feedback__header {
+      margin-bottom: 25px;
+    }
+
+    & .feedback__label {
+      margin-left: 21px;
+    }
+
+    & .feedback__wrapper {
+      margin-bottom: 18px;
+      position: relative;
+
+      &:last-of-type::before {
+        background-image: url("../img/icon-mail.svg");
+      }
+
+      &::before {
+        content: "";
+        width: 58px;
+        height: 58px;
+        background-color: #e6e6e6;
+        position: absolute;
+        top: 28px;
+        right: 0;
+        background-image: url("../img/icon-phone.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+
   &--impression {
+    padding-bottom: 14px;
+
+    & .feedback__header {
+      margin-bottom: 23px;
+    }
+
+    & .feedback__wrapper {
+      margin-bottom: 13px;
+      line-height: 56px;
+    }
+
     @media (min-width: $tablet-width) {
       order: -1;
       width: 50%;
     }
   }
 
-  &--introducing {
-    @media (min-width: $tablet-width) {
-      width: 50%;
+  &--showplaces {
+    & .feedback__header {
+      margin-bottom: 18px;
+    }
+
+    & .feedback__wrapper {
+      line-height: 59px;
+    }
+  }
+
+  &--emotions {
+    padding-bottom: 47px;
+
+    & .feedback__header {
+      margin-bottom: 16px;
     }
   }
 
@@ -70,19 +131,47 @@
 
   &--introducing {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 }
 
-.feedback__legend {
-  font-weight: bold;
+.feedback__header {
   font-size: 18px;
   line-height: 26px;
+  margin-bottom: 21px;
   text-align: center;
 }
 
 .feedback__label {
-  margin-right: 8px;
+  margin-right: 14px;
+
+  &--radio,
+  &--checkbox {
+    font-size: 18px;
+    line-height: 26px;
+    position: relative;
+    padding-left: 78px;
+    font-weight: bold;
+    text-transform: none;
+
+    &::before {
+      content: "";
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background-color: #f2f2f2;
+      position: absolute;
+      top: -16px;
+      left: 0;
+    }
+  }
+
+  &--checkbox {
+    &::before {
+      border-radius: 10%;
+    }
+  }
 }
 
 .feedback__input {
@@ -91,7 +180,7 @@
   }
 
   &:focus {
-    padding: 18px;
+    padding: 20px;
     outline: none;
     border: solid 4px #e5e5e5;
     background-color: white;
@@ -99,12 +188,13 @@
 
   &--text {
     flex-grow: 1;
-    margin-left: auto;
+    width: 150px;
   }
 
   &--tel,
   &--email {
-    width: 100%;
+    width: calc(100% - 58px);
+    margin-top: 12px;
 
     @media (min-width: $desktop-width) {
       width: 258px;
@@ -114,10 +204,10 @@
   &--text,
   &--email,
   &--tel {
-    border: none;
     background-color: #f2f2f2;
-    height: 56px;
-    padding: 22px;
+    border: solid 4px #f2f2f2;
+    height: 58px;
+    padding: 0 20px;
 
     &::placeholder {
       font-weight: bold;
@@ -126,23 +216,39 @@
       color: black;
     }
   }
+
+  &--radio,
+  &--checkbox {
+    display: none;
+  }
+
+  // как это говно реализовать хз
+  // &--radio:checked {
+  //   background-color: red;
+  // }
+
+  // &--radio:checked ~ .feedback__label--radio:after {
+  //   content: "";
+  //   width: 22px;
+  //   height: 22px;
+  //   border-radius: 50%;
+  //   background-color: #333333;
+  // }
 }
 
 .feedback__textarea {
-  border: none;
+  border: solid 4px #f2f2f2;
   background-color: #f2f2f2;
   width: 100%;
   min-height: 160px;
-  padding: 22px;
+  padding: 13px 16px;
 
   &:hover {
     background-color: #e5e5e5;
   }
 
   &:focus {
-    padding: 18px;
     outline: none;
-    border: solid 4px #e5e5e5;
     background-color: white;
   }
 
@@ -157,11 +263,12 @@
 .feedback__btn {
   font-weight: bold;
   font-size: 21px;
-  line-height: 26px;
+  line-height: 58px;
   color: white;
   text-transform: uppercase;
-  width: 100%;
-  min-height: 58px;
+  min-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: $main-color;
   border: none;
   display: block;
