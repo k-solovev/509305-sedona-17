@@ -328,7 +328,7 @@
       </div>
     </footer>
 
-    <section class="popup-error">
+    <section class="popup-error popup-error--closed">
       <h2 class="popup-error__title">Что-то пошло не&nbsp;так!</h2>
       <p class="popup-error__text">
         Проверьте поля, выделенные красным, скорее всего вы забыли
@@ -337,7 +337,7 @@
       <button class="popup-error__btn" type="button">Ок</button>
     </section>
 
-    <section class="popup-success">
+    <section class="popup-success popup-success--closed">
       <h2 class="popup-success__title">Ваш отзыв отправлен!</h2>
       <p class="popup-success__text">
         Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам.
@@ -348,23 +348,7 @@
       </div>
     </section>
 
-    <script>
-      var navMain = document.querySelector(".main-nav");
-      var navToggle = document.querySelector(".main-nav__toggle");
-      var modalError = document.querySelector(".popup-error");
-      var modalSuccess = document.querySelector(".popup-success");
-
-      navMain.classList.remove("main-nav--nojs");
-
-      navToggle.addEventListener("click", function() {
-        if (navMain.classList.contains("main-nav--closed")) {
-          navMain.classList.remove("main-nav--closed");
-          navMain.classList.add("main-nav--opened");
-        } else {
-          navMain.classList.add("main-nav--closed");
-          navMain.classList.remove("main-nav--opened");
-        }
-      });
-    </script>
+    <script src="js/menu.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>

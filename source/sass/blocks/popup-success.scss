@@ -1,5 +1,4 @@
 .popup-success {
-  display: none;
   width: 320px;
   min-height: 323px;
   padding-top: 50px;
@@ -12,6 +11,14 @@
     min-height: 347px;
     padding: 60px;
   }
+}
+
+.popup-success--closed {
+  display: none;
+}
+
+.popup-success--opened {
+  display: flex;
 }
 
 .popup-success__title {

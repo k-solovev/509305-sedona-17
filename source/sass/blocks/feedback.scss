@@ -14,17 +14,57 @@
   padding: 0 20px 5px 20px;
   margin: 0;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   &--introducing {
+    margin-bottom: 20px;
+
     @media (min-width: $tablet-width) {
+      margin-bottom: 0;
       width: 50%;
+      padding-left: 57px;
+      padding-bottom: 0;
+      border-top: none;
+    }
+
+    & .feedback__header {
+      @media (min-width: $tablet-width) {
+        margin-bottom: 57px;
+        margin-top: 0;
+        text-align: left;
+      }
+    }
+
+    & .feedback__wrapper {
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
   }
 
   &--contacts {
+    width: 100%;
     padding-bottom: 9px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 69px;
+      margin-bottom: 40px;
+    }
 
     & .feedback__header {
       margin-bottom: 25px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 30px;
+        margin-top: -13px;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+      }
     }
 
     & .feedback__label {
@@ -34,6 +74,10 @@
     & .feedback__wrapper {
       margin-bottom: 18px;
       position: relative;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 28px;
+      }
 
       &:last-of-type::before {
         background-image: url("../img/icon-mail.svg");
@@ -55,45 +99,94 @@
   }
 
   &--impression {
+    margin-bottom: 13px;
     padding-bottom: 14px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
 
     & .feedback__header {
       margin-bottom: 23px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 59px;
+        margin-top: 0;
+        text-align: left;
+      }
     }
 
     & .feedback__wrapper {
       margin-bottom: 13px;
       line-height: 56px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 22px;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
 
     @media (min-width: $tablet-width) {
+      border-top: none;
+      border-right: 1px solid #e5e5e5;
       order: -1;
       width: 50%;
     }
   }
 
   &--showplaces {
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 45px;
+    }
+
     & .feedback__header {
       margin-bottom: 18px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 42px;
+        width: 400px;
+        margin-top: -26px;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
 
     & .feedback__wrapper {
       line-height: 59px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 28px;
+      }
     }
   }
 
   &--emotions {
+    width: 100%;
     padding-bottom: 47px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 8px;
+    }
 
     & .feedback__header {
       margin-bottom: 16px;
-    }
-  }
 
-  &--contacts,
-  &--showplaces,
-  &--emotions {
-    width: 100%;
+      @media (min-width: $tablet-width) {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        margin-top: -12px;
+        margin-bottom: 56px;
+      }
+    }
   }
 }
 
@@ -117,11 +210,23 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      padding: 0 150px;
+      padding: 0 81px;
     }
 
     @media (min-width: $desktop-width) {
       padding: 0;
+    }
+
+    & .feedback__wrapper:nth-child(odd) {
+      @media (min-width: $tablet-width) {
+        padding-left: 14px;
+      }
+    }
+
+    & .feedback__wrapper:nth-child(2) {
+      @media (min-width: $tablet-width) {
+        padding-right: 14px;
+      }
     }
   }
 }
@@ -141,6 +246,10 @@
   line-height: 26px;
   margin-bottom: 21px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .feedback__label {
@@ -267,6 +376,7 @@
   color: white;
   text-transform: uppercase;
   min-width: 280px;
+  padding: 0;
   margin-left: auto;
   margin-right: auto;
   background-color: $main-color;
@@ -275,15 +385,16 @@
 
   @media (min-width: $tablet-width) {
     width: 324px;
+    margin-left: 0;
+  }
 
-    &:hover {
-      background-color: $hvr-btn;
-    }
+  &:hover {
+    background-color: $hvr-btn;
+  }
 
-    &:active {
-      color: rgba(255, 255, 255, 0.3);
-      background-color: $act-btn;
-    }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $act-btn;
   }
 }
 
@@ -297,6 +408,7 @@
   display: none;
 
   @media (min-width: $tablet-width) {
+    padding-top: 8px;
     display: block;
   }
 }
