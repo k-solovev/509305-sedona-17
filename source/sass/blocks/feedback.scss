@@ -336,6 +336,18 @@
       border-radius: 10%;
     }
   }
+
+  &:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &:active::before {
+    background-color: #d5d5d5;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
 .feedback__input {
@@ -386,18 +398,28 @@
     display: none;
   }
 
-  // как это говно реализовать хз
-  // &--radio:checked {
-  //   background-color: red;
-  // }
+  &--radio:checked + .feedback__label:after {
+    content: "";
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #333333;
+    position: absolute;
+    top: 2px;
+    left: 17px;
+  }
 
-  // &--radio:checked ~ .feedback__label--radio:after {
-  //   content: "";
-  //   width: 22px;
-  //   height: 22px;
-  //   border-radius: 50%;
-  //   background-color: #333333;
-  // }
+  &--checkbox:checked + .feedback__label:after {
+    content: "";
+    width: 23px;
+    height: 16px;
+    position: absolute;
+    top: 4px;
+    left: 17px;
+    background-image: url("../img/icon-tick.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .feedback__textarea {
