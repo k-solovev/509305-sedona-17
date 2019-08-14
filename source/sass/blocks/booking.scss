@@ -7,7 +7,7 @@
     padding-bottom: 58px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-bottom: 66px;
   }
 }
@@ -32,14 +32,14 @@
   text-align: center;
   width: 263px;
   margin: 0 auto;
-  margin-bottom: 36px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     width: 438px;
     margin-bottom: 42px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 47px;
   }
 }

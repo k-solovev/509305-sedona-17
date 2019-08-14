@@ -1,3 +1,9 @@
+.intro {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 37px;
+  }
+}
+
 .intro__logo {
   min-height: 389px;
   background-color: $main-color;
