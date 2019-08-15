@@ -4,8 +4,12 @@
   min-height: 280px;
   padding: 55px;
   flex-direction: column;
+  background-color: white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   z-index: 10;
+  position: fixed;
+  top: 25%;
+  left: 0;
 
   @media (min-width: $tablet-width) {
     width: 400px;

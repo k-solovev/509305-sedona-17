@@ -55,6 +55,10 @@
     top: 25px;
     left: 93px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 540px;
+  }
 }
 
 .player__bar {
@@ -66,6 +70,10 @@
 
   @media (min-width: $tablet-width) {
     width: 389px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 540px;
   }
 
   &::before {

@@ -90,10 +90,11 @@
                 >Имя*:</label
               >
               <input
-                class="feedback__input feedback__input--text"
+                class="feedback__input feedback__input--text feedback__input--name"
                 id="name"
                 type="text"
                 placeholder="Петр"
+                -moz-placeholder="Петр"
                 required
               />
             </div>
@@ -104,7 +105,7 @@
                 >Фамилия*:</label
               >
               <input
-                class="feedback__input feedback__input--text"
+                class="feedback__input feedback__input--text feedback__input--second-name"
                 id="second-name"
                 type="text"
                 placeholder="Иванов"
@@ -118,7 +119,7 @@
                 >Отчество:</label
               >
               <input
-                class="feedback__input feedback__input--text"
+                class="feedback__input feedback__input--text feedback__input--third-name"
                 id="third-name"
                 type="text"
                 placeholder="Александрович"
@@ -350,5 +351,7 @@
 
     <script src="js/menu.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/picturefill.js"></script>
+    <script src="js/svgxuse.js"></script>
   </body>
 </html>

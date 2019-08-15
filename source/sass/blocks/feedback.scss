@@ -384,11 +384,10 @@
     border: solid 4px #f2f2f2;
     height: 58px;
     padding: 0 20px;
+    font-size: 18px;
 
     &::placeholder {
       font-weight: bold;
-      font-size: 18px;
-      line-height: 26;
       color: black;
     }
   }
@@ -398,7 +397,7 @@
     display: none;
   }
 
-  &--radio:checked + .feedback__label:after {
+  &--radio:checked + .feedback__label::after {
     content: "";
     width: 22px;
     height: 22px;
@@ -409,7 +408,7 @@
     left: 17px;
   }
 
-  &--checkbox:checked + .feedback__label:after {
+  &--checkbox:checked + .feedback__label::after {
     content: "";
     width: 23px;
     height: 16px;
