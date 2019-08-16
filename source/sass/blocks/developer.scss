@@ -6,6 +6,11 @@
 
 .developer__text {
   display: inline-block;
+  margin-right: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
 }
 
 .developer__link {

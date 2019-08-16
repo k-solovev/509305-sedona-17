@@ -2,16 +2,29 @@
   width: 320px;
   min-height: 323px;
   padding-top: 50px;
-  display: flex;
+  background-color: white;
   flex-direction: column;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   z-index: 10;
+  position: fixed;
+  top: 25%;
+  left: 0;
 
   @media (min-width: $tablet-width) {
     width: 640px;
     min-height: 347px;
     padding: 60px;
+    left: 50%;
+    transform: translateX(-50%);
   }
+}
+
+.popup-success--closed {
+  display: none;
+}
+
+.popup-success--opened {
+  display: flex;
 }
 
 .popup-success__title {

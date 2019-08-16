@@ -1,22 +1,27 @@
 .feedback-block {
+  padding-top: 22px;
+  padding-bottom: 40px;
+
   @media (min-width: $tablet-width) {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 50px 60px 65px 60px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 120px;
     padding-right: 120px;
+    padding-bottom: 67px;
   }
 }
 
 .feedback-block__title {
+  margin-bottom: 27px;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
   width: auto;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
     font-size: 30px;
     line-height: 26px;
   }
@@ -27,10 +32,18 @@
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 17px;
   width: auto;
 
   @media (min-width: $tablet-width) {
-    padding-left: 140px;
-    padding-right: 140px;
+    margin-bottom: 74px;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 59px;
+    padding-left: 240px;
+    padding-right: 240px;
   }
 }

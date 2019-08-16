@@ -2,14 +2,17 @@
   width: 320px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 14px;
   display: flex;
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    padding-top: 12px;
     padding-left: 60px;
     padding-right: 60px;
     flex-wrap: nowrap;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,13 +24,16 @@
 
 .page-footer__text {
   width: 100%;
+  margin-bottom: 35px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: auto;
+    width: 33%;
+    text-align: left;
+    margin-top: 30px;
   }
 }
 
@@ -38,6 +44,6 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    width: auto;
+    width: 33.3%;
   }
 }

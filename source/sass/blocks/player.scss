@@ -1,5 +1,9 @@
 .player {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
 }
 
 .player__img {
@@ -14,51 +18,84 @@
 }
 
 .player__control {
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 280px;
   display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  bottom: -63px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  min-height: 63px;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 648px;
+    min-height: 93px;
+    margin: 0;
+    position: absolute;
+    bottom: 3px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .player__scroll {
-  width: 100%;
-  height: 45px;
-  background-color: black;
-  opacity: 0.6;
+  width: 280px;
+  min-height: 45px;
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
+  position: absolute;
+  top: -48px;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    width: 389px;
+    top: 25px;
+    left: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 540px;
+  }
 }
 
 .player__bar {
   position: relative;
   width: 235px;
   height: 3px;
-  background-color: white;
-  opacity: 0.2;
+  background-color: rgba(255, 255, 255, 0.2);
   margin: auto;
-}
 
-.player__slider {
-  cursor: pointer;
-  width: 11px;
-  height: 10px;
-  background-color: white;
-  border-radius: 50%;
-  position: absolute;
-  top: -3px;
-}
+  @media (min-width: $tablet-width) {
+    width: 389px;
+  }
 
-.player__wrap {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  background-color: #f2f2f2;
-  min-height: 66px;
+  @media (min-width: $desktop-width) {
+    width: 540px;
+  }
+
+  &::before {
+    content: "";
+    cursor: pointer;
+    width: 11px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    top: -3px;
+    left: 34px;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      left: 112px;
+    }
+  }
 }
 
 .player__button {
   border: none;
+  outline: none;
   padding: 0;
   margin-top: auto;
   margin-bottom: auto;
@@ -66,14 +103,48 @@
 
   &--repeat {
     margin-left: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 35px;
+    }
   }
 
   &--subtitles {
     margin-left: auto;
   }
 
-  &--full-screen {
-    margin-left: 23px;
+  &--fullscreen {
+    margin-left: 31px;
     margin-right: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 41px;
+    }
+  }
+}
+
+.player__icon {
+  fill: #5c6870;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    fill: white;
+
+    &:hover {
+      fill: white;
+      opacity: 0.6;
+    }
+
+    &:active {
+      fill: white;
+      opacity: 0.3;
+    }
   }
 }

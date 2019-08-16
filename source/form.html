@@ -84,13 +84,13 @@
           method="get"
         >
           <fieldset class="feedback__fieldset feedback__fieldset--introducing">
-            <legend class="feedback__legend">Представьтесь:</legend>
+            <h3 class="feedback__header">Представьтесь:</h3>
             <div class="feedback__wrapper feedback__wrapper--introducing">
               <label class="feedback__label feedback__label--text" for="name"
                 >Имя*:</label
               >
               <input
-                class="feedback__input feedback__input--text"
+                class="feedback__input feedback__input--text feedback__input--name"
                 id="name"
                 type="text"
                 placeholder="Петр"
@@ -104,7 +104,7 @@
                 >Фамилия*:</label
               >
               <input
-                class="feedback__input feedback__input--text"
+                class="feedback__input feedback__input--text feedback__input--second-name"
                 id="second-name"
                 type="text"
                 placeholder="Иванов"
@@ -118,7 +118,7 @@
                 >Отчество:</label
               >
               <input
-                class="feedback__input feedback__input--text"
+                class="feedback__input feedback__input--text feedback__input--third-name"
                 id="third-name"
                 type="text"
                 placeholder="Александрович"
@@ -127,7 +127,7 @@
           </fieldset>
 
           <fieldset class="feedback__fieldset feedback__fieldset--contacts">
-            <legend class="feedback__legend">Контактная информация:</legend>
+            <h3 class="feedback__header">Контактная информация:</h3>
             <div class="feedback__inner feedback__inner--contacts">
               <div class="feedback__wrapper">
                 <label class="feedback__label" for="phone">
@@ -158,7 +158,7 @@
           </fieldset>
 
           <fieldset class="feedback__fieldset feedback__fieldset--impression">
-            <legend class="feedback__legend">Ваше общее впечатление:</legend>
+            <h3 class="feedback__header">Ваше общее впечатление:</h3>
             <div class="feedback__wrapper">
               <input
                 class="feedback__input feedback__input--radio"
@@ -202,9 +202,9 @@
           </fieldset>
 
           <fieldset class="feedback__fieldset feedback__fieldset--showplaces">
-            <legend class="feedback__legend">
+            <h3 class="feedback__header">
               Посещенные достопримечательности:
-            </legend>
+            </h3>
             <div class="feedback__inner feedback__inner--showplaces">
               <div class="feedback__wrapper">
                 <input
@@ -265,17 +265,15 @@
           </fieldset>
 
           <fieldset class="feedback__fieldset feedback__fieldset--emotions">
-            <legend class="feedback__legend">Опишите свои эмоции:</legend>
+            <h3 class="feedback__header">Опишите свои эмоции:</h3>
             <textarea
               class="feedback__textarea"
               name="comment"
-              cols="30"
-              rows="10"
               placeholder="Опишите подробно все свои восторги "
             ></textarea>
           </fieldset>
           <button class="feedback__btn" type="submit">Отправить отзыв</button>
-          <p class="feedback__subtext">* — обязательные поля</p>
+          <p class="feedback__subtext">* &#8211; обязательные поля</p>
         </form>
       </section>
     </main>
@@ -330,7 +328,7 @@
       </div>
     </footer>
 
-    <section class="popup-error">
+    <section class="popup-error popup-error--closed">
       <h2 class="popup-error__title">Что-то пошло не&nbsp;так!</h2>
       <p class="popup-error__text">
         Проверьте поля, выделенные красным, скорее всего вы забыли
@@ -339,7 +337,7 @@
       <button class="popup-error__btn" type="button">Ок</button>
     </section>
 
-    <section class="popup-success">
+    <section class="popup-success popup-success--closed">
       <h2 class="popup-success__title">Ваш отзыв отправлен!</h2>
       <p class="popup-success__text">
         Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам.
@@ -350,21 +348,9 @@
       </div>
     </section>
 
-    <script>
-      var navMain = document.querySelector(".main-nav");
-      var navToggle = document.querySelector(".main-nav__toggle");
-
-      navMain.classList.remove("main-nav--nojs");
-
-      navToggle.addEventListener("click", function() {
-        if (navMain.classList.contains("main-nav--closed")) {
-          navMain.classList.remove("main-nav--closed");
-          navMain.classList.add("main-nav--opened");
-        } else {
-          navMain.classList.add("main-nav--closed");
-          navMain.classList.remove("main-nav--opened");
-        }
-      });
-    </script>
+    <script src="js/menu.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/picturefill.js"></script>
+    <script src="js/svgxuse.js"></script>
   </body>
 </html>

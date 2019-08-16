@@ -11,3 +11,28 @@
     width: 1200px;
   }
 }
+
+.page-form .intro__logo {
+  min-height: 157px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 290px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 301px;
+  }
+}
+
+.page-form .intro__slogan {
+  top: 50px;
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+    top: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 101px;
+  }
+}
