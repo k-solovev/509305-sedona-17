@@ -8,12 +8,13 @@
   z-index: 10;
   position: fixed;
   top: 25%;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
     width: 640px;
     min-height: 347px;
-    padding: 60px;
+    padding-top: 60px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -41,6 +42,10 @@
   line-height: 24px;
   text-align: center;
   padding: 0 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 80px;
+  }
 }
 
 .popup-success__wrapper {
@@ -49,6 +54,10 @@
   min-height: 98px;
   background-color: #f2f2f2;
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    min-height: 146px;
+  }
 }
 
 .popup-success__btn {
